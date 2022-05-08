@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "otto-test"
+version = "0.1.0"
+description = "python + pytest + selene + allure web tests for otto"
+authors = ["Natalie Svitlychna <natalisvitlychna@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+selene = {version = "^2.0.0-alpha.30", allow-prereleases = true}
+python-dotenv = "^0.20.0"
+pydantic = "^1.9.0p"
+pytest = "^7.1.1"
+pytest-xdist = "^2.5.0"
+pytest-rerunfailures = "^9.1.1"
+allure-pytest = "^2.8.11"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
